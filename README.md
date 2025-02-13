@@ -1,4 +1,4 @@
-# Assignment 1 Solution #
+# Substitution Solver #
 This code automatically determines the key of a ciphertext. This is done as such :
 
 * This code performs a frequency analysis on a large amount of modern plaintext to determine the frequency at which different ascii characters in r"[a-zA-Z0-9.!?,;'" ]" appear. 

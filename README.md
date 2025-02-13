@@ -7,7 +7,7 @@ This code automatically determines the key of a ciphertext. This is done as such
 
 To run this code, open a terminal, and while within the project directory, first run 
 
-`pip install -r requirements.txt` 
+`pip3.10 install -r requirements.txt` 
 
 to install requirements and then simply run Solution.py on the command line using Python 3.10, like : 
 
@@ -16,6 +16,13 @@ to install requirements and then simply run Solution.py on the command line usin
 This will generate an Approximate key using a character frequency analysis in conjunction
 with a bigram frequency analysis hill-climbing algorithm to convert the ciphertext into
 text which Approximates English.
+
+The key produced by the above operation can then be reused and tweaked until a suitable
+substitution cipher key is found. This can be done as such:
+
+`python3.10 Solution.py --key "[modified key outputted by G.A. algorithm]"`
+
+Remember to enclose the key string in quotes, and to escape control characters like ", ', ;
 
 It is recommended that this project is run using pyenv for python version management, but
 this is optional.
